@@ -1,0 +1,42 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            <h1><%= title %></h1>
+            <div class="col-md-12 mt-5 mb-1">
+                <a href="/survey/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle"></i> Create Survey
+                </a>
+            </div>
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr class="d-flex">
+                    <th class="text-center col-8">Survey Name</th>
+                    <th class="text-center col-4">Creator</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+                <% for (let count = 0; count < SurveyList.length; count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-8">
+                            <a href="/survey/form/<%= SurveyList[count]._id %>">
+                                <%= SurveyList[count].title %>
+                            </a>
+                        </td>
+                        
+                        <td class="text-center col-4">
+                            <%= SurveyList[count].creatorName %>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+        
+    </div>
+</main>
+  
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
