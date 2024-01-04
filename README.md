@@ -27,5 +27,6 @@ Bootstrap is utilized for frontend styling, ensuring a responsive and visually a
 - Node Modules and Packages:
 Various Node modules and packages, including 'http', 'path', 'express-session', and others, are employed to extend functionality and features, contributing to a well-structured and efficient codebase.
 ```
-This technology stack has been carefully selected and integrated to create a robust, secure, and feature-rich web application. Each technology plays a crucial role in ensuring the application's functionality, security, and user experience.
+This technology stack has been carefully selected and integrated to create a robust, secure, and feature-rich web application.
+Each technology plays a crucial role in ensuring the application's functionality, security, and user experience.
 ```
